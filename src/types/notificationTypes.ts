@@ -1,2 +1,2 @@
 // Types for notification Status
-export type notificationStatus = "success" | "error" | "warning" | "default";
+export type NOTIFICATION_STATUS = "success" | "error" | "warning" | "default";

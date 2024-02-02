@@ -16,22 +16,23 @@ export default function Button( {
     className,
     notificationElement,
 } : ButtonProps) {
+    const addNotification  = useNotification();
 
     // Function to send notification
     const Nofity = () => {
-        useNotification(notificationElement);
+        addNotification(notificationElement);
     }
 
-  return (
-    <button  
-        className={clsx("flex items-center justify-center h-14 w-28 font-bold font-plusJakartaSans text-center text-lg leading-6 rounded-lxl",
-        {"bg-hiveBlack text-white": dark},
-        {"bg-white text-hiveBlack border border-veryLightGrey": !dark},
-        className
-        )}
-        onClick={Nofity}
-    >
-        {text}
-    </button>
-  )
+    return (
+        <button  
+            className={clsx("flex items-center justify-center h-14 w-28 font-bold font-plusJakartaSans text-center text-lg leading-6 rounded-lxl",
+            {"bg-hiveBlack text-white": dark},
+            {"bg-white text-hiveBlack border border-veryLightGrey": !dark},
+            className
+            )}
+            onClick={Nofity}
+        >
+            {text}
+        </button>
+    )
 }

@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         {/* Notification Space */}
-        <div id="notification" className="absolute top-28 right-4 z-10 flex flex-col gap-4"></div>
+        <div id="notification" className="absolute top-28 right-4 z-20 flex flex-col gap-4"></div>
         {children}
       </body>
     </html>

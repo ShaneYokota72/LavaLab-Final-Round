@@ -1,10 +1,10 @@
-import { favoriteToolsProps } from "@/types/favoriteToolsTypes";
+import { FAVORITE_TOOLS_METADATA } from "@/types/favoriteToolsTypes";
 import FavoriteTool from "@/components/FavoriteTool";
 import Button from "@/components/Button";
 import clsx from "clsx";
 import Notification from "@/components/Notification";
 
-const favoriteTools:favoriteToolsProps[] = [
+const FAVORITE_TOOLS:FAVORITE_TOOLS_METADATA[] = [
   {
     name: "Figma",
     description: "Stay up to date with your team's latest designs.",
@@ -58,11 +58,11 @@ export default function Home() {
       
       <h2 className="font-helvetica text-5xl leading-19 mt-12 md:mt-40 mb-12 z-10">Connect your favorite tools.</h2>
 
-      <div className="flex flex-wrap gap-10">
+      <div className="flex flex-wrap gap-10 2xl:w-11/12">
         {
-          favoriteTools.map((tool, index) => {
+          FAVORITE_TOOLS.map((tool, index) => {
             return (
-              <FavoriteTool key={index} name={tool.name} description={tool.description} imagePath={tool.imagePath} />
+              <FavoriteTool key={index} delay={index*25} name={tool.name} description={tool.description} imagePath={tool.imagePath} />
             )
           })
         }
