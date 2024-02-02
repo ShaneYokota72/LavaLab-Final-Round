@@ -1,4 +1,5 @@
 import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 
 // This hook is used to display a notification on the screen
 const useNotification = ( notificationElement : React.ReactElement ) => {
@@ -9,13 +10,16 @@ const useNotification = ( notificationElement : React.ReactElement ) => {
     if (notificationDiv) {
         // create a new div element
         const domNode = document.createElement('div');
-        // render the notification to the new div element
-        ReactDOM.render(notificationElement, domNode);
-        // append the new div element to the notification div
+        // render the notification element to the div
+        const root = createRoot(domNode);  
+        root.render(notificationElement);
+        
+        // append the div to the notification div
         notificationDiv.appendChild(domNode);
 
-        // remove notification after 3 seconds
+        // remove the notification after 3 seconds
         setTimeout(() => {
+            root.unmount();
             notificationDiv.removeChild(domNode);
         }, 3000);
     }

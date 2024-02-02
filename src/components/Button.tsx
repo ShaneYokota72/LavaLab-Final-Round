@@ -7,7 +7,7 @@ interface ButtonProps {
     text: string;
     dark?: boolean;
     className?: string;
-    notificationElement?: React.ReactElement;
+    notificationElement: React.ReactElement;
 }
 
 export default function Button( {
@@ -18,10 +18,8 @@ export default function Button( {
 } : ButtonProps) {
 
     // Function to send notification
-    const nofity = () => {
-        if (notificationElement) {
-            useNotification(notificationElement);
-        }
+    const Nofity = () => {
+        useNotification(notificationElement);
     }
 
   return (
@@ -31,7 +29,7 @@ export default function Button( {
         {"bg-white text-hiveBlack border border-veryLightGrey": !dark},
         className
         )}
-        onClick={nofity}
+        onClick={Nofity}
     >
         {text}
     </button>
