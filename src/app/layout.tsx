@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="overflow-x-hidden">
         <Navbar />
         {/* Notification Space */}
         <div id="notification" className="absolute top-28 right-4 z-20 flex flex-col gap-4"></div>

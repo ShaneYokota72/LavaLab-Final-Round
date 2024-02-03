@@ -14,7 +14,7 @@ const useNotification = () => {
             root.render(notificationElement);
 
             notificationDiv.appendChild(domNode);
-    
+            
             // remove the notification after 3 seconds
             setTimeout(() => {
                 // add animation to the notification

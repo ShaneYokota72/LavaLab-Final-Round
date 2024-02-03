@@ -58,7 +58,7 @@ export default function Home() {
       
       <h2 className="font-helvetica text-5xl leading-19 mt-12 md:mt-40 mb-12 z-10">Connect your favorite tools.</h2>
 
-      <div className="flex flex-wrap gap-10 2xl:w-11/12">
+      <div className="max-w-7xl flex flex-wrap gap-10">
         {
           FAVORITE_TOOLS.map((tool, index) => {
             return (
