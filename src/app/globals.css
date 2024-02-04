@@ -13,6 +13,26 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+_::-webkit-full-page-media, _:future, :root #safari_only{
+  background: radial-gradient(ellipse at 50% 75%, rgb(183 29 255 / 20%), transparent);
+}    
+
+_::-webkit-full-page-media, _:future, :root #safari_only_text {
+  margin-top: 0px !important;
+}
+
+@media (min-width: 1281px) {
+  _::-webkit-full-page-media, _:future, :root #safari_only_text {
+    padding-top: 160px !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  _::-webkit-full-page-media, _:future, :root #safari_only_text {
+    padding-top: 48px !important;
+  }
+} 
+
 @keyframes notif_in {
   from {
     opacity: 0;
