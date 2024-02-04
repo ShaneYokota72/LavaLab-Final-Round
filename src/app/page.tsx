@@ -52,7 +52,7 @@ export default function Home() {
   return (
     <div className={clsx(
       "relative px-18 pb-19.5 bg-white",// basic styling
-      "before:w-7/12 before:h-[500px] before:absolute before:bottom-20 before:left-1/2 before:-translate-x-1/2 before:bg-[#B71DFF] before:blur-[900px] before:content-[''] before:opacity-40 before:dark:opacity-40",// backgruond blur effect
+      "before:w-7/12 before:h-[500px] before:absolute before:bottom-20 before:left-1/2 before:-translate-x-1/2 before:bg-hivePurpleBackground before:blur-9xl before:content-[''] before:opacity-40",// backgruond blur effect
       )}
     >
       

@@ -16,6 +16,8 @@ const config: Config = {
       colors: {
         'hivePurple': '#9730FF',
         'hivePurpleLight': '#E8D9FF',
+        'hivePurpleBackground': '#B71DFF',
+        'hiveBlack': '#1A1225',
         'whisper': '#EEEEEE',
         'veryLightGrey': '#C8C8C8',
         'success': '#40713F',
@@ -24,7 +26,6 @@ const config: Config = {
         'errorLight': '#FFEBEB',
         'warning': '#FFA800',
         'warningLight': '#FFF5E0',
-        'hiveBlack': '#1A1225',
       },
       fontFamily: {
         'satoshi': ['Satoshi', 'sans-serif'],
@@ -70,6 +71,9 @@ const config: Config = {
         'favtool_in-150': 'favtool_in .8s normal forwards ease-out 1 0.75s',
         'favtool_in-175': 'favtool_in .8s normal forwards ease-out 1 0.875s',
       },
+      blur: {
+        '9xl' : '900px',
+      }
     },
   },
   plugins: [],
